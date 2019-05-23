@@ -4,5 +4,10 @@ Data reduction package for Seoul National University Astronomical Observatory (S
 
 Prerequisites
 -------------
+astropy  
+numpy  
+Pyraf  
 
+SExtractor  
+Astrometry.net  
 
