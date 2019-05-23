@@ -13,23 +13,25 @@ Pyraf (Basic reduction, image stacking, Image align)
 Alipy (Image align)  
 
 **Other softwares :**  
-SExtractor (E.Bertin 1996)  
-(Scamp)  
-Astrometry.net  
-Hotpants  
-wcsremap  
+SExtractor (Photometry, Masking, Sky subtraction ; E.Bertin 1996)  
+(Scamp, Image stacking, resampling)    
+Astrometry.net (WCS solving)  
+Stiff (Color image)  
+Hotpants (Image subtraction)  
+wcsremap (Image alignment)  
 
 Install
 -------------  
+TBD.  
 
 Contact
 -------------
-Please don't hesitate to send me an email --> lim9gu@gmail.com
+Please don't hesitate to send me an email (lim9gu@gmail.com)  
 (Suggestions, Questions, Complains, Compliments, Collaboration, Funding...)
 
 Acknowledgement
 ------------- 
-Superviser : Myunshin Im (CEOU, SNU)  
+Superviser : Myungshin Im (CEOU, SNU)  
 Technical advices : Jinguk Seo (SNU), Kihyun Kim (SNU)  
-IMSNG team : Changsu Choi (CEOU, SNU), Gregory S.H. Paek (CEOU, SNU)  
+IMSNG team : Changsu Choi (CEOU, SNU), Gregory S.H. Paek (CEOU, SNU), Sophia Kim (CEOU, SNU), Joonho Kim (CEOU, SNU) 
 Software development : Yoonsoo Bach Park (SNU)
