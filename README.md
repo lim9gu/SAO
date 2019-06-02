@@ -35,4 +35,4 @@ Acknowledgement
 Superviser : Myungshin Im (CEOU, SNU)  
 Technical advices : Jinguk Seo (SNU), Kihyun Kim (SNU)  
 IMSNG team : Changsu Choi (CEOU, SNU), Gregory S.H. Paek (CEOU, SNU), Sophia Kim (CEOU, SNU), Joonho Kim (CEOU, SNU)  
-Software development : Yoonsoo Bach Park (SNU)
+Software development : Yoonsoo P. Bach (SNU)
