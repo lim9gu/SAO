@@ -4,7 +4,7 @@ def download(today = True):
     : Download IMSNG imaging data using SCP and crontab.
 
     * Main commands ;
-    > ssh -p 222 admin@147.46.139.34 # PWD : 123456qwer!
+    > ssh -p 222 admin@***.***.***.** # PWD : *********
     > ls /volume1/1mobs/STX16803/
     > scp -p port id@ip:path_original upper_directory_for_destination
 
@@ -24,10 +24,6 @@ def download(today = True):
     import os, sys
     from datetime import datetime
 
-    accessid = 'admin'
-    pwd      = '123456qwer!'
-    ip       = '147.46.139.34'
-
     nas_data_path = '/volume1/1mobs/STX16803/'
     qso_data_path = '/data3/SAO1m/obsdata/STX16803/'
     qso_red_path  = '/data3/SAO1m/red/STX16803/'
@@ -40,7 +36,7 @@ def download(today = True):
         curdate = input('Specify date : ')
     try:
         print("Copy today's data on obsdata path...")
-        sshpass = os.system('sshpass -p123456qwer! scp -o StrictHostKeyChecking=no -P 222 -r admin@147.46.139.34:'+ nas_data_path+curdate+' '+qso_data_path)
+        sshpass = os.system('sshpass -p*********** scp -o StrictHostKeyChecking=no -P 222 -r admin@***.***.***.**:'+ nas_data_path+curdate+' '+qso_data_path)
         if sshpass == 0 :
             print('Data is downloaded. Copy to working directory.')
             #os.system('cp -r '+qso_data_path+curdate+' '+qso_red_path)
