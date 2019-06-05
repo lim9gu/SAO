@@ -9,7 +9,7 @@ def download(today = True):
     > scp -p port id@ip:path_original upper_directory_for_destination
 
     On the terminal at qso server, type this command.
-    > scp -P 222 -r admin@147.46.139.34:/volume1/1mobs/STX16803/20190516 /data3/SAO1m/obsdata/STX16803
+    > scp -P 222 -r admin@***.***.***.**:/volume1/1mobs/STX16803/20190516 /data3/SAO1m/obsdata/STX16803
 
     2. Usage
     
