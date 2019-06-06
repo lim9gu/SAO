@@ -44,4 +44,5 @@ Current version is 0.6. This code will be updated continuously.
 (Last update: 2019-06-06)
 
 2019.06.06 (Version 0.6) : All images (bias, dark, flat, sci) are classified using header information IMAGETYP. MJD information will be added in image header. + Minor error corrections
+
 2019.??.?? (Version 1.0) : FWHM, Zero point information will be measured and entered in image header. + Minor error corrections
