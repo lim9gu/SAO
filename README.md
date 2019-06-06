@@ -31,13 +31,6 @@ Contact
 Please don't hesitate to send me an email (lim9gu@gmail.com)  
 (Suggestions, Questions, Complains, Compliments, Collaboration, Funding...)
 
-Acknowledgement
-------------- 
-Superviser : Professor. Myungshin Im (CEOU, SNU)  
-Technical advices : Jinguk Seo (SNU), Kihyun Kim (SNU)  
-IMSNG team : Changsu Choi (CEOU, SNU), Gregory S.H. Paek (CEOU, SNU), Sophia Kim (CEOU, SNU), Joonho Kim (CEOU, SNU)  
-Software development : Yoonsoo P. Bach (SNU)
-
 History
 -------------
 Current version is 0.6. This code will be updated continuously.   
@@ -46,3 +39,11 @@ Current version is 0.6. This code will be updated continuously.
 2019.06.06 (Version 0.6) : All images (bias, dark, flat, sci) are classified using header information IMAGETYP. MJD information will be added in image header. + Minor error corrections
 
 2019.??.?? (Version 1.0) : FWHM, Zero point information will be measured and entered in image header. + Minor error corrections
+
+Acknowledgement
+------------- 
+Superviser : Professor. Myungshin Im (CEOU, SNU)  
+Technical advices : Jinguk Seo (SNU), Kihyun Kim (SNU)  
+IMSNG team : Changsu Choi (CEOU, SNU), Gregory S.H. Paek (CEOU, SNU), Sophia Kim (CEOU, SNU), Joonho Kim (CEOU, SNU)  
+Software development : Yoonsoo P. Bach (SNU)
+
