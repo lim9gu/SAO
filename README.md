@@ -22,8 +22,11 @@ Hotpants (Image subtraction)
 wcsremap (Image alignment)  
 
 Install
--------------  
-TBD.  
+-------------
+1. Reduction code : Preprocessing functions are contained. Download SAO_process.py on your site-packages/SAO location with __init__.py file.
+2. Download code : Using IP and ID of the data storage server, download data on specific date. This code can be erased without prediction due to security. Download SAO_download.py.  
+3. Command code : Using reduction code 1., all process of reduction is performed automatically. Download SAO_command.py 
+Continuous updates will be applied.
 
 Contact
 -------------
