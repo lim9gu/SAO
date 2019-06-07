@@ -605,7 +605,7 @@ def hdrcheck(imlist_name):
 
 	qso_data_path = '/data3/SAO1m/obsdata/STX16803/'
 	qso_red_path  = '/data3/SAO1m/red/STX16803/'
-
+	SAO_fov = 21.2 # arcmin
 	all_catname = '/data3/IMSNG/alltarget.dat'
 	all_cat     = ascii.read(all_catname) 
 	ra, dec = all_cat['ra'], all_cat['dec']
@@ -630,23 +630,23 @@ def hdrcheck(imlist_name):
 		jd              = hdr['jd']
 		coo_target      = SkyCoord(CRVAL1, CRVAL2, unit=(u.deg, u.deg))
 		indx, d2d, d3d  = coo_target.match_to_catalog_sky(coo_all)
-		if indx.size == 0 :
-			print('No matching. Maybe you obtained wrong field. OR Non IMSNG target.' )
-			#os.system('mkdir bad')
-			#os.system('mv '+inim+' .//')
-		elif indx.size == 1 :
+		mjd0 = 2400000.5
+		mjd  = jd - mjd0
+		hdr['mjd']  = mjd
+		if d2d.arcmin > SAO_fov/2. :
+			print('Coordinates of the image are not in IMSNG catalog. No matching. Maybe you obtained wrong field. OR Non-IMSNG target.' )
+			fits.writeto(inim, data, header=hdr, overwrite=True)
+			print('Only MJD is entered in image header.')
+			pass
+		elif d2d.arcmin < SAO_fov/2. :
 				obj  = all_cat[indx]['obj']
-				mjd0 = 2400000.5
-				mjd  = jd - mjd0
 				print('======================================')
 				print(obj)+ ' is matched.'
 				print(str(round(d2d.arcmin[0],3))+ ' arcmin apart')
 				print('======================================')
 				hdr['object']   = obj
-				hdr['mjd']      = mjd
 				fits.writeto(inim, data, header=hdr, overwrite=True)
-		#elif len(idx) > 1 :
-		#		print('2 targets in 1 field.')
+				
 	print('Header info inspection is finished.')
 #=================================================================
 def fnamechange(camera='STX16803') :
